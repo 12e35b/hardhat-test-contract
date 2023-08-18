@@ -1,40 +1,50 @@
 # Sample hardhat test contract 
 
 ## Set up the project
-`npm init --yes`
-`npm install --save-dev hardhat`
-`npm install --save-dev @nomiclabs/hardhat-waffle`
-`npx hardhat`
+```
+npm init --yes
+npm install --save-dev hardhat
+npm install --save-dev @nomiclabs/hardhat-waffle
+npx hardhat
+```
 
 ## Compile the contract
-`npx hardhat compile`
+```
+npx hardhat compile
+```
 
-```
-Compiled 1 Solidity file successfully
-```
+> Compiled 1 Solidity file successfully
 
 ## Run the local hardhat node (in the new tab)
-`npx hardhat node`
+```
+npx hardhat node
+```
 
 ## Deploy the contract locally
-`npm run deploy`
-
 ```
-TestContract deployed to:  0x5FbDB2315678afecb367f032d93F642f64180aa3
+npm run deploy
 ```
 
-```
-  Contract deployment: TestContract
-  Contract address:    0x5fbdb2315678afecb367f032d93f642f64180aa3
-  Transaction:         0x1554d7c0b9284a30d3ca2cf05a1722e19e84b76097eda7c470c0be60b83544cd
-  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  Value:               0 ETH
-  Gas used:            446745 of 446745
-  Block #1:            0xb0df3f28e3971bd9cac1453c3618347821a0d15b85a932b644f8b339f376d867
-```
+> TestContract deployed to:  0x5FbDB2315678afecb367f032d93F642f64180aa3
+
+>  Contract deployment: TestContract
+>
+>  Contract address:    0x5fbdb2315678afecb367f032d93f642f64180aa3
+> 
+>  Transaction:         0x1554d7c0b9284a30d3ca2cf05a1722e19e84b76097eda7c470c0be60b83544cd
+> 
+>  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+> 
+>  Value:               0 ETH
+> 
+>  Gas used:            446745 of 446745
+> 
+>  Block #1:            0xb0df3f28e3971bd9cac1453c3618347821a0d15b85a932b644f8b339f376d867
 
 ## Test the contract via HardHat console
-`npx hardhat console --network localhost`
+```
+npx hardhat console --network localhost
+```
 
 ```
 > const testContract = await ethers.getContractAt("TestContract", "0x5fbdb2315678afecb367f032d93f642f64180aa3")
