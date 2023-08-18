@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-test-contract",
+  "version": "1.0.0",
+  "description": "Sample hardhat test contract",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx hardhat run --network localhost scripts/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "hardhat": "^2.17.1"
+  }
+}
